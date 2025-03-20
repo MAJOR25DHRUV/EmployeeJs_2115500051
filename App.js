@@ -22,3 +22,19 @@ switch (Math.floor(Math.random() * 3)) {
 
 let dailyWage = empHours * WAGE_PER_HOUR;
 console.log(`Daily Wage: $${dailyWage}`);
+
+//UC3 
+function getWorkHours() {
+    switch (Math.floor(Math.random() * 3)) {
+        case 1:
+            return PART_TIME_HOURS;
+        case 2:
+            return FULL_TIME_HOURS;
+        default:
+            return 0;
+    }
+}
+
+let empHours = getWorkHours();
+let dailyWage = empHours * WAGE_PER_HOUR;
+console.log(`Daily Wage: $${dailyWage}`);
